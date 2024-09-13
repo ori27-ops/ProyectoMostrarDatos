@@ -13,28 +13,35 @@
     <script type="module" src="./assets/js/scriptEpisodios.js"></script>
   </head>
   <body>
-    <nav>
+    <header>
       <img
         src="https://images.thedirect.com/media/article_full/rick1.jpg"
         alt="Rick"
       />
-      <h1>Lugares</h1>
+      <h1>Episodios</h1>
       <img
         src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/12/rick-and-morty-anime.jpg"
         alt="Morty"
       />
+    </header>
+    <nav class="filtros">
+      <select id="filter-container">
+        <option value="Todas">Todas las temporadas</option>
+        <option value="Temporada 1">Temporada 1</option>
+        <option value="Temporada 2">Temporada 2</option>
+        <option value="Temporada 3">Temporada 3</option>
+        <option value="Temporada 4">Temporada 4</option>
+        <option value="Temporada 5">Temporada 5</option>
+        <option value="Temporada 5">Temporada 6</option>
+        <option value="Temporada 5">Temporada 7</option>
+      </select>
+
+      <a href="./index2.html" id="btn-regresar"
+        ><i class="bi bi-box-arrow-left"></i> Regresar
+      </a>
     </nav>
 
-    <select id="filter-container">
-      <option value="">Todos los tipos</option>
-      <option value="Temporada 1"></option>
-      <option value="Temporada 2"></option>
-      <option value="Temporada 3"></option>
-      <option value="Temporada 4"></option>
-      <option value="Temporada 5"></option>
-    </select>
-
-    <main id="episodios-container"></main>
+    <main id="episode-container"></main>
 
     <footer>
       <p>Todos los derechos reservados &copy; 2024</p>

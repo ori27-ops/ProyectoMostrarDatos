@@ -1,3 +1,6 @@
+@import "./variables.css";
+@import url("https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Handjet:wght@100..900&display=swap");
+
 body {
   background-image: url(https://images.unsplash.com/photo-1569470451072-68314f596aec?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D);
   background-repeat: no-repeat;
@@ -7,9 +10,10 @@ body {
   margin: 0;
   padding: 0;
   background-color: #001a00;
+  font-family: "Handjet", sans-serif;
 }
 
-nav {
+header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -21,13 +25,13 @@ nav {
   height: 80px;
 }
 
-nav > img {
+header > img {
   height: 80px;
   margin-top: 5px;
   border-radius: 30px;
 }
 
-nav h1 {
+header h1 {
   color: #00ff00;
   letter-spacing: 5px;
   text-shadow: 0px 0px 5px rgba(0, 255, 0, 0.7);
@@ -135,4 +139,73 @@ footer {
 
 .desconocido {
   background-color: gray;
+}
+.filtros {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#filter-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 30px;
+  padding: 10px;
+  top: 100px;
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid #00ff00;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 255, 0, 0.5);
+  color: #00ff00;
+  font-size: 18px;
+}
+
+#filter-container h3 {
+  margin: 0 0 15px 0;
+  font-size: 22px;
+  text-align: center;
+  color: #00ff00;
+  text-shadow: 0 0 5px rgba(0, 255, 0, 0.7);
+}
+
+#filter-container select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #00ff00;
+  border-radius: 8px;
+  background: #001a00;
+  color: #00ff00;
+  font-size: 16px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0, 255, 0, 0.4);
+}
+
+#filter-container:hover {
+  background-color: #003300;
+  transform: scale(1.05);
+}
+
+#btn-regresar {
+  padding: 10px 10px;
+  background-color: rgb(0, 0, 0);
+  border: 2px solid #00ff00;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 255, 0, 0.5);
+  text-decoration: none;
+  color: #00ff00;
+  text-align: center;
+  font-size: 20px;
+  transition: all 0.3s ease-in;
+  margin: 30px;
+}
+
+#btn-regresar i {
+  margin-right: 8px;
+}
+
+#btn-regresar:hover {
+  background-color: #003300;
+  transform: scale(1.03);
 }

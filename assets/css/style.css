@@ -1,4 +1,5 @@
 @import "./variables.css";
+@import url("https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Handjet:wght@100..900&display=swap");
 
 body {
   background-image: url(https://images.unsplash.com/photo-1569470451072-68314f596aec?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D);
@@ -9,6 +10,7 @@ body {
   background-position: center;
   margin: 0;
   padding: 0;
+  font-family: "Handjet", sans-serif;
 }
 
 main {
@@ -20,12 +22,12 @@ main {
 }
 
 h1 {
-  font-size: 90px;
-  color: var(--primary-green);
+  font-size: 130px;
+  color: #9dff00ea;
   letter-spacing: 9px;
   text-align: center;
   margin: 0;
-  text-shadow: 0 0 10px rgba(0, 255, 0, 0.8), 0 0 20px rgba(0, 255, 0, 0.6),
+  text-shadow: 0 0 10px rgba(0, 245, 0, 0.8), 0 0 20px rgba(0, 255, 0, 0.6),
     0 0 30px rgba(0, 255, 0, 0.4); /* Efecto de resplandor */
 }
 
@@ -34,6 +36,7 @@ img {
   border-radius: 5px;
   margin: 0;
   align-self: flex-end;
+  height: 100%;
 }
 
 h3 {
@@ -52,15 +55,15 @@ div {
 }
 
 #btn {
-  background-color: var(--primary-green);
+  background-color: var(--greenplant);
   color: #000000;
   padding: 12px 12px;
   border: 2px solid #ffffff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 255, 0, 0.6), 0 0 20px rgba(0, 255, 0, 0.4),
     0 0 30px rgba(0, 255, 0, 0.2);
-  font-size: 17px;
-  letter-spacing: 1px;
+  font-size: 19px;
+  letter-spacing: 3px;
   cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s ease;
   margin: 18px auto;
@@ -68,7 +71,7 @@ div {
 }
 
 #btn:hover {
-  background-color: #1aff1a;
+  background-color: #48ff1acb;
   transform: scale(1.1);
   box-shadow: 0 0 20px rgba(0, 255, 0, 0.8), 0 0 40px rgba(0, 255, 0, 0.6),
     0 0 60px rgba(0, 255, 0, 0.4);
@@ -78,4 +81,5 @@ p {
   color: #ffffff;
   margin: 60px 0;
   line-height: 1.6;
+  font-size: 20px;
 }
