@@ -3,7 +3,7 @@ function getEpisode(id) {
     $.get(`https://rickandmortyapi.com/api/episode/${id}`, function (data) {
         let episodeCard = $("<div></div>").addClass("episode-card");
 
-        let nombre = $(`<a href="./contEpisodio.html" id="${id}"></a>`).text(data.name.toUpperCase());
+        let nombre = $(`<a href="./detallesEp.html" id="${id}"></a>`).text(data.name.toUpperCase());
         nombre.addClass("name-episodios");
 
         let nombreContainer = $("<div></div>").addClass("name-container");
