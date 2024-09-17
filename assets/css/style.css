@@ -55,7 +55,7 @@ div {
 }
 
 #btn {
-  background-color: var(--greenplant);
+  background-color: #48ff1acb;
   color: #000000;
   padding: 12px 12px;
   border: 2px solid #ffffff;
@@ -63,6 +63,7 @@ div {
   box-shadow: 0 0 10px rgba(0, 255, 0, 0.6), 0 0 20px rgba(0, 255, 0, 0.4),
     0 0 30px rgba(0, 255, 0, 0.2);
   font-size: 19px;
+  font-weight: 30px;
   letter-spacing: 3px;
   cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s ease;

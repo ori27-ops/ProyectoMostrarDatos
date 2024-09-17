@@ -5,7 +5,7 @@ function getcharacter(id) {
     personajes.push(data);
       let charCard = $("<div></div>").addClass("caracter-card");
 
-      let nombre = $(`<a href="#" id="${id}"></a>`).text(data.name.toUpperCase()); 
+      let nombre = $(`<div id="${id}"></div>`).text(data.name.toUpperCase()); 
       nombre.addClass("name-personaje");
 
       let nombreContainer = $("<div></div>").addClass("name-container");
@@ -26,8 +26,6 @@ function getcharacter(id) {
       } else {
         circulo_Status.addClass("desconocido");
       }
-
-
 
       let statusContainer = $("<div></div>").addClass("status-container");
       statusContainer.append(circulo_Status); 

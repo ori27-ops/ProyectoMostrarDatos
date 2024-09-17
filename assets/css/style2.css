@@ -12,7 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  /* height: 80vh; */
   margin: 0;
   font-family: "Handjet", sans-serif;
 }
@@ -23,6 +23,7 @@ body {
 
 .title {
   font-size: 90px;
+  margin-top: 20px;
   margin-bottom: 100px;
   color: #30d801;
   text-shadow: 0 0 5px rgba(106, 90, 90, 0.7),
@@ -33,6 +34,7 @@ body {
 
 .button-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 40px; /* Espacio entre botones */
 }
@@ -69,4 +71,11 @@ body {
   background-color: rgb(74, 109, 50);
   transform: scale(1.05); /* Efecto de zoom */
   box-shadow: 0px 8px 25px rgba(0, 255, 0, 0.6); /* Sombra más pronunciada */
+}
+
+@media screen and (max-width: 700px) {
+  .title {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
 }

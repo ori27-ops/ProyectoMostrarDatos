@@ -7,7 +7,7 @@ $(document).ready(function () {
    $("#nombre-lugar").text(lugar.name)
    let cajaInfo = $("<div></div>").addClass("info-caja");
    let tipo = $("<h2></h2>").text(`Tipo: ${lugar.type}`).addClass("tipo-lugar");
-   let dimension = $("<h2></h2>").text(`${lugar.dimension}"`).addClass("dimension-lugar");
+   let dimension = $("<h2></h2>").text(lugar.dimension === "unknown" ? `Dimensión desconocida` : lugar.dimension).addClass("dimension-lugar");
    let residentes = $("<h2></h2>").text("Residentes:").addClass("tit-residentes");
    cajaInfo.append(tipo,dimension,residentes);
    $("#info-container").append(cajaInfo);
