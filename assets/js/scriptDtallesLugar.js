@@ -4,13 +4,20 @@ $(document).ready(function () {
 
   console.log(lugar);
   
-   $("#nombre-lugar").text(lugar.name)
+   let nombre = $("#nombre-lugar").text(lugar.name)
    let cajaInfo = $("<div></div>").addClass("info-caja");
+   let detallesAdicionales = $("<div></div>").addClass("detalles-adicionales");
+   let titResidente = $("<div></div>").addClass("tit-residentes");
    let tipo = $("<h2></h2>").text(`Tipo: ${lugar.type}`).addClass("tipo-lugar");
    let dimension = $("<h2></h2>").text(lugar.dimension === "unknown" ? `Dimensión desconocida` : lugar.dimension).addClass("dimension-lugar");
    let residentes = $("<h2></h2>").text("Residentes:").addClass("tit-residentes");
-   cajaInfo.append(tipo,dimension,residentes);
+   
+   cajaInfo.append(nombre);
    $("#info-container").append(cajaInfo);
+   detallesAdicionales.append(dimension, tipo,residentes);
+   $("#tipo-Dimension").append(detallesAdicionales);
+   titResidente.append(residentes);
+   $("#titulo-Residente").append(titResidente);
    
 
    if (lugar.residents.length > 0) {

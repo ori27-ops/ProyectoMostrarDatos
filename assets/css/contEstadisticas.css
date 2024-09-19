@@ -65,3 +65,13 @@ nav {
   background-color: #003300;
   transform: scale(1.03);
 }
+
+#grafica {
+  max-width: 1000px !important;
+  margin: 0 auto;
+}
+
+#estadistica {
+  max-width: 1000px !important;
+  margin: 0 auto;
+}

@@ -5,7 +5,7 @@ function getcharacter(id) {
     personajes.push(data);
       let charCard = $("<div></div>").addClass("caracter-card");
 
-      let nombre = $(`<div id="${id}"></div>`).text(data.name.toUpperCase()); 
+      let nombre = $(`<h1 id="${id}"></h1>`).text(data.name.toUpperCase()); 
       nombre.addClass("name-personaje");
 
       let nombreContainer = $("<div></div>").addClass("name-container");
@@ -56,7 +56,7 @@ function filtrarPersonajes(genero) {
   personajesFiltrados.forEach(personaje => {
     let charCard = $("<div></div>").addClass("caracter-card");
 
-    let nombre = $(`<a href="#" id="${personaje.id}"></a>`).text(personaje.name.toUpperCase()); 
+    let nombre = $(`<h1 href="#" id="${personaje.id}"></h1>`).text(personaje.name.toUpperCase()); 
     nombre.addClass("name-personaje");
 
     let nombreContainer = $("<div></div>").addClass("name-container");
