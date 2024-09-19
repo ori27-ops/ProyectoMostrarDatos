@@ -82,6 +82,6 @@ Con esta aplicación, los usuarios pueden acceder fácilmente a toda la informac
 ## 👩‍💻Creado por: 
 
 * [Mishell Arroyo](https://github.com/Mishell-A)
-* [Oriana](#)
-* [Soraya](#)
+* [Oriana](https://github.com/ori27-ops)
+* [Soraya](https://github.com/sortumerivera)
 * [Xiomara](https://github.com/xiomara-18)
